@@ -27,6 +27,8 @@ jobs:
   build_and_push:
     needs: initialise
     runs-on: ubuntu-latest
+    
+    steps:
       - name: Build docker image and push online
         uses: docker/build-push-action@v4
         with:
